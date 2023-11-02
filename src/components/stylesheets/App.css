@@ -1,0 +1,94 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+form,
+fieldset,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.5;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Typography */
+.link-tag {
+  text-decoration: none;
+  color: #0077b6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Mobile styles */
+}
+
+/* Backgrounds and Sidebar Styling */
+.right-sidebar {
+  padding: 0;
+  background-color: #db188a3a;
+  background-image: url(../../images/background.jpg);
+}
+
+.left-sidebar {
+  background-color: rgb(59, 204, 148);
+}
+
+/* Comments for Clarity */
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #0077b6;
+  --font-size-large: 18px;
+  --spacing-unit: 16px;
+}
+
+/* Box Shadows and Borders */
+.box {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

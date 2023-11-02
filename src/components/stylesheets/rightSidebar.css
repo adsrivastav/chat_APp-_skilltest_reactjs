@@ -1,0 +1,299 @@
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.header p {
+  font-size: 18px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-family: cursive;
+}
+
+/* Contact Tab Styles */
+.contact-tab {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 3px;
+}
+
+.contactText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #2f2f2f;
+  width: auto;
+}
+
+.contactText p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Left Sidebar Header Styles */
+.left-sidebar-header {
+  box-shadow: 0 4px 8px 0 rgba(59, 59, 59, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* New Conversation Tab Styles */
+.new-convo {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.new-convo p {
+  font-size: 16px;
+}
+
+.new-convo .fas {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.new-convo-tab {
+  border: 1px solid rgb(137, 47, 255);
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  right: 350px;
+  z-index: 99;
+}
+
+.nct-header {
+  background-color: #648381;
+  color: white;
+  height: 55px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.nct-header p {
+  font-size: 18px;
+}
+
+.nct-header .fas {
+  cursor: pointer;
+}
+
+.nct-list {
+  height: 343px;
+  overflow: auto;
+}
+
+/* Chat Box Styles */
+.no-chat-background {
+  background-color: black; /* Changed background color to black */
+}
+
+.message-box {
+  height: 95vh;
+  overflow: auto;
+}
+
+/* Message Box Header Styles */
+.message-box-header {
+  background: white; /* Changed background color to white */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(204, 16, 204, 0.2), 0 6px 20px 0 rgba(111, 196, 174, 0.336);
+}
+
+/* Messages Section Styles */
+.messages-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 40px;
+}
+
+.message-bubble {
+  display: flex;
+  align-items: center;
+}
+
+.mbr {
+  flex-direction: row-reverse;
+}
+
+/* No Message Alert Styles */
+.no-message-alert {
+  position: absolute;
+  bottom: 50px;
+  left: 60%;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(229, 231, 231);
+  padding: 1.2rem;
+}
+
+@media screen and (max-width: 622px) {
+  .no-message-alert {
+    font-size: 14px;
+  }
+}
+
+/* Chat Bubbles Styles */
+.left-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: white; /* Changed background color to white */
+  border-radius: 4px;
+  position: relative;
+  margin: 15px 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .left-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .message {
+    font-size: 12px;
+  }
+}
+
+.txt {
+  padding: 8px 55px 8px 14px;
+}
+
+.message {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: white; /* Changed text color to white */
+}
+
+.message-timestamp {
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.bubble-arrow {
+  position: absolute;
+  width: 0;
+  bottom: 42px;
+  left: -16px;
+  height: 0;
+}
+
+.bubble-arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 9px solid white; /* Changed border color to white */
+  border-radius: 0 20px 0;
+  width: 15px;
+  height: 30px;
+  transform: rotate(145deg);
+}
+
+/* Right Bubble Styles */
+.right-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: rgb(204, 186, 186); /* Changed background color to white */
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+  align-self: flex-end;
+  padding: 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .right-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+}
+
+.bubble-arrow-alt {
+  right: -2px;
+  bottom: 40px;
+  left: auto;
+}
+
+.bubble-arrow-alt:after {
+  transform: rotate(45deg) scaleY(-1);
+}
+
+/* Message Input Styles */
+.message-input {
+  background: rgb(5, 34, 46); /* Changed background color to white */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.message-input input {
+  outline: none;
+  padding: 6px;
+  width: 100%;
+}
+
+/* Send Button Styles */
+.send-button {
+  background-color: black; /* Changed background color to black */
+  width: 30%;
+  color: white;
+  padding: 6px;
+  transition: background-color 0.3s; /* Added hover transition */
+}
+
+.send-button:hover {
+  background-color: white; /* Hover background color change to white */
+  color: rgb(143, 19, 19); /* Hover text color change to black */
+}
+
+@media screen and (max-width: 792px) {
+  .send-button {
+    font-size: 12px;
+    width: 40%;
+  }
+}
